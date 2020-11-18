@@ -35,8 +35,8 @@ img {
 
 .hero {
   position: relative;
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   background-color: #6e3719;
   border: 1px solid #6e3719;
   border-radius: 10px;
@@ -193,6 +193,11 @@ img {
       600px / 400;
   }
 
+  .hero {
+    height: 90%;
+    width: 90%;
+  }
+
   .hero-section {
     position: relative;
     max-width: 80%;
@@ -221,6 +226,11 @@ img {
 @media screen and (min-width: 1000px) {
   html {
     font-size: calc(var(--primary-font-size) + var(--primary-font-diff));
+  }
+
+  .hero {
+    height: 90%;
+    width: 90%;
   }
 
   .hero-section {
