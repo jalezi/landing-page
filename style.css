@@ -9,7 +9,7 @@
   --primary-font-size: 12px;
   --primary-font-diff: 4px;
   --coffee-width: 150px;
-  --anim-top-start: -150px;
+  --anim-top-start: -190px;
   --anim-top-step: 20px;
 }
 
@@ -179,19 +179,19 @@ img {
   }
   20% {
     top: calc(var(--anim-top-start) + (4 * var(--anim-top-step)));
-    opacity: 1;
+    opacity: 0.9;
   }
   40% {
     top: calc(var(--anim-top-start) + (3 * var(--anim-top-step)));
-    opacity: 1;
+    opacity: 0.7;
   }
   60% {
     top: calc(var(--anim-top-start) + (2 * var(--anim-top-step)));
-    opacity: 1;
+    opacity: 0.5;
   }
   80% {
     top: calc(var(--anim-top-start) + (1 * var(--anim-top-step)));
-    opacity: 1;
+    opacity: 0.35;
   }
   100% {
     top: var(--anim-top-start);
