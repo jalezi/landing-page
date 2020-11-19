@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --coffee-width: 200px;
+  --coffee-width: 150px;
   --anim-top-start: -150px;
   --anim-top-step: 20px;
   --primary-font-size: 12px;
@@ -221,6 +221,10 @@ img {
     bottom: 5%;
     right: 7.5%;
   }
+
+  .coffee-cup > img {
+    width: calc(var(--coffee-width) + 25px);
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -251,5 +255,9 @@ img {
     position: absolute;
     bottom: 7.5%;
     right: 10%;
+  }
+
+  .coffee-cup > img {
+    width: calc(var(--coffee-width) + 50px);
   }
 }
