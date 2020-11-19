@@ -66,16 +66,16 @@ img {
 .hero-section > h1,
 .hero-section > h2 {
   margin: 30px 30px;
+  padding: 0.5em 1em;
   border: 1px solid var(--primary-bcg-color);
   border-radius: 10px;
-  background-color: #6e371970;
+  background-color: #6e3719dc;
 }
 
 .hero-section > h1 {
   font-size: 2em;
   font-family: 'Dancing Script', cursive;
   display: inline-block;
-  background-color: #6e371970;
 }
 
 .hero-section > h2 {
@@ -100,7 +100,7 @@ img {
 .hero-section > button:hover {
   color: var(--primary-color);
   background-color: transparent;
-  border: 1px solid var(--primary-color);
+  border: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 0px 16px 2px var(--primary-color);
 }
 
