@@ -66,7 +66,7 @@ img {
 .hero-section > h1,
 .hero-section > h2 {
   margin: 30px 30px;
-  padding: 0.5em 1em;
+  padding: 8px 24px;
   border: 1px solid var(--primary-bcg-color);
   border-radius: 10px;
   background-color: #6e3719dc;
@@ -197,11 +197,6 @@ img {
 }
 
 @media screen and (min-width: 320px) {
-  html {
-    font-size: calc(var(--primary-font-size) + var(--primary-font-diff) / 2) *
-      320px / 680;
-  }
-
   .hero-section {
     position: relative;
     max-width: 90%;
@@ -209,7 +204,8 @@ img {
 
   .hero-section > h1,
   .hero-section > h2 {
-    margin: 40px 40px;
+    margin: 35px 35px;
+    padding: 12px 32px;
   }
 
   .hero-section > h2 {
@@ -222,8 +218,8 @@ img {
 
   .coffee-cup {
     position: absolute;
-    bottom: 5%;
-    right: 7.5%;
+    bottom: 3.5%;
+    right: 5.5%;
   }
 
   .coffee-cup > img {
@@ -252,6 +248,7 @@ img {
   .hero-section > h1,
   .hero-section > h2 {
     margin: 60px 40px 40px;
+    padding: 16px 32px;
   }
 
   .hero-section > h1 {
@@ -295,6 +292,7 @@ img {
   .hero-section > h1,
   .hero-section > h2 {
     margin: 70px 50px 50px;
+    padding: 16px 32px;
   }
 
   .hero-section > button {
