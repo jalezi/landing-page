@@ -1,3 +1,11 @@
+/* COFFEE BEANS Photo by Juan Pablo Serrano Arenas from Pexels */
+/* BEER CHEERS Photo by ELEVATE from Pexels */
+/* PIZZA Photo by Brett Jordan from Pexels */
+
+/* Small (smaller than 640px) */
+/* Medium (641px to 1007px) */
+/* Large (1008px and larger) */
+
 :root {
   --primary-color: white;
   --primary-contrast-color: black;
@@ -188,3 +196,8 @@ main {
   min-height: 100vh;
   background-color: red;
 }
+
+
+/* Small (smaller than 640px) */
+/* Medium (641px to 1007px) */
+/* Large (1008px and larger) *
