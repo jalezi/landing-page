@@ -121,7 +121,7 @@ header nav {
 .sidebar .nav-links {
   color: var(--primary-contrast-color);
   margin: 20px 0;
-  animation: close-margin 1.2s ease-out forwards;
+  animation: close-margin 0.6s ease-in forwards;
 }
 
 .hamburger-input:checked + label + .sidebar {
