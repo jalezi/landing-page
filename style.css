@@ -39,6 +39,7 @@ header nav {
 /* HAMBURGER */
 
 .hamburger {
+  color: var(--primary-color);
   display: inline-block;
   margin-right: 10px;
   overflow: hidden;
@@ -63,13 +64,13 @@ header nav {
 .hamburger-icon:after,
 .hamburger-icon:before,
 .hamburger-line {
-  background-color: #fff;
-  border-radius: 3px;
   content: '';
   display: block;
-  background-color: black;
   height: 2px;
   margin: 3px 0;
+
+  border-radius: 3px;
+  background-color: black;
 }
 
 /* HAMBURGER TRANSITIONS */
@@ -86,10 +87,6 @@ header nav {
 
 /* HAMBURGER RADIO BUTTON CHECKED */
 
-.hamburger {
-  color: var(--primary-color);
-}
-
 .hamburger-input:checked + label .hamburger-line {
   transform: translateX(200%);
 }
@@ -100,30 +97,6 @@ header nav {
   transform: translateY(-5px) rotate(-45deg);
 }
 
-/* SIDEBAR */
-
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: -100vh;
-  left: 0;
-  height: 0vh;
-  width: 100vw;
-  overflow: hidden;
-  background-color: #a3a3a3;
-
-  animation: close-sidebar 1s ease-out;
-}
-
-.sidebar .nav-links {
-  color: var(--primary-contrast-color);
-  margin: 20px 0;
-  animation: close-margin 0.6s ease-in forwards;
-}
-
 .hamburger-input:checked + label + .sidebar {
   z-index: 100;
   top: 10vh;
@@ -132,6 +105,31 @@ header nav {
 
 .hamburger-input:checked + label + .sidebar .nav-links {
   animation: open-margin 1.1s ease-out forwards;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  height: 0vh;
+  width: 100vw;
+  overflow: hidden;
+
+  background-color: #a3a3a3;
+  animation: close-sidebar 1s ease-out;
+}
+
+.sidebar .nav-links {
+  color: var(--primary-contrast-color);
+  margin: 20px 0;
+  animation: close-margin 0.6s ease-in forwards;
 }
 
 /* SIDEBAR OPEN - CLOSE ANIMATION */
@@ -163,6 +161,9 @@ header nav {
     border-bottom: 1px solid black;
   }
 }
+
+/* SIDEBAR NAV-LINKS OPEN - CLOSE ANIMATION */
+
 @keyframes open-margin {
   0% {
     margin: 0;
