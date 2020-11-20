@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" defer />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" defer />
+    <link rel="stylesheet" href="slider.css" defer />
   </head>
   <body>
     <!-- HEADER -->
@@ -36,36 +43,134 @@
     </header>
     <!-- MAIN -->
     <main>
-      <section>
-        <picture>
-          <source
-            media="(min-width:1008px)"
-            srcset="/beer-cheers/beer-cheers-landscape-large.webp"
-          />
-          <source
-            media="(min-width:641px)"
-            srcset="/beer-cheers/beer-cheers-landscape-medium.webp"
-          />
-          <source
-            media="(max-width:640px)"
-            srcset="/beer-cheers/beer-cheers-landscape-small.webp"
-          />
-          <img
-            src="/beer-cheers/beer-cheers-landscape-large.jpg"
-            alt="Flowers"
-            style="width: auto"
-          />
-        </picture>
+      <section class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" checked="checked" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+
+          <div class="slide first">
+            <picture>
+              <source
+                media="(orientation: landscape)"
+                srcset="
+                  ./beer/beer-sm.webp  640w,
+                  ./beer/beer-md.webp 1007w,
+                  ./beer/beer-lg.webp 1920w
+                "
+              />
+              <source
+                media="(orientation: portrait)"
+                srcset="
+                  ./beer/beer-portrait-sm.webp  640w,
+                  ./beer/beer-portrait-md.webp 1007w,
+                  ./beer/beer-portrait-lg.webp 1920w
+                "
+                sizes="100vw"
+              />
+              <img
+                src="./beer/beer-portrait-sm.jpg"
+                alt="Cheers with beer"
+                width="100"
+              />
+            </picture>
+          </div>
+          <div class="slide">
+            <picture>
+              <source
+                media="(orientation: landscape)"
+                srcset="
+                  ./coffee/coffee-sm.webp  640w,
+                  ./coffee/coffee-md.webp 1007w,
+                  ./coffee/coffee-lg.webp 1920w
+                "
+              />
+              <source
+                media="(orientation: portrait)"
+                srcset="
+                  ./coffee/coffee-portrait-sm.webp  640w,
+                  ./coffee/coffee-portrait-md.webp 1007w,
+                  ./coffee/coffee-portrait-lg.webp 1920w
+                "
+                sizes="100vw"
+              />
+              <img
+                src="./coffee/coffee-portrait-sm.jpg"
+                alt="Coffee"
+                width="100"
+              />
+            </picture>
+          </div>
+          <div class="slide">
+            <picture>
+              <source
+                media="(orientation: landscape)"
+                srcset="
+                  ./pizza/pizza-sm.webp  640w,
+                  ./pizza/pizza-md.webp 1007w,
+                  ./pizza/pizza-lg.webp 1920w
+                "
+              />
+              <source
+                media="(orientation: portrait)"
+                srcset="
+                  ./pizza/pizza-portrait-sm.webp  640w,
+                  ./pizza/pizza-portrait-md.webp 1007w,
+                  ./pizza/pizza-portrait-lg.webp 1920w
+                "
+                sizes="100vw"
+              />
+              <img
+                src="./pizza/pizza-portrait-sm.jpg"
+                alt="Pizza"
+                width="100"
+              />
+            </picture>
+          </div>
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
       </section>
-      <section></section>
-      <section></section>
     </main>
+    <footer>
+      <a href="#" aria-label="Go to facebook"
+        ><i class="fab fa-facebook fa-lg" aria-hidden="true"></i
+      ></a>
+      <a href="#" aria-label="Go to instagram"
+        ><i class="fab fa-instagram-square fa-lg" aria-hidden="true"></i
+      ></a>
+      <a href="#" aria-label="Go to google maps"
+        ><i class="fas fa-map-marked-alt fa-lg" aria-hidden="true"></i
+      ></a>
+    </footer>
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        console.log(counter);
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if (counter > 3) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
   </body>
 </html>
 
-<!-- Photo by ELEVATE from Pexels -->
-<!-- Photo by Juan Pablo Serrano Arenas from Pexels -->
+<!-- COFFEE BEANS Photo by ELEVATE from Pexels -->
+<!-- BEER CHEERS Photo by Juan Pablo Serrano Arenas from Pexels -->
 <!-- PIZZA Photo by Brett Jordan from Pexels -->
+<!-- BEER CHEERS PORTRAIT Photo by Tembela Bohle from Pexels -->
+<!-- COFFEE PORTRAIT Photo by Chevanon Photography from Pexels -->
+<!-- PIZZA PORTRAIT Photo by Daria Shevtsova from Pexels -->
 
 <!-- Small (smaller than 640px) -->
 <!-- Medium (641px to 1007px) -->

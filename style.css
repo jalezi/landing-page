@@ -1,7 +1,3 @@
-/* COFFEE BEANS Photo by Juan Pablo Serrano Arenas from Pexels */
-/* BEER CHEERS Photo by ELEVATE from Pexels */
-/* PIZZA Photo by Brett Jordan from Pexels */
-
 /* Small (smaller than 640px) */
 /* Medium (641px to 1007px) */
 /* Large (1008px and larger) */
@@ -30,10 +26,21 @@ header {
   align-items: center;
 }
 
-header > a:first-child {
-  margin-left: 10px;
+footer{
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
 }
 
+/* FONT AWESOME */
+
+i.fab,
+i.fas {
+  color:black
+}
+
+/* NAV */
 header nav {
   display: none;
 }
@@ -44,6 +51,10 @@ header nav {
   text-decoration: none;
 }
 
+header > a:first-child {
+  margin-left: 10px;
+}
+
 /* HAMBURGER */
 
 .hamburger {
@@ -51,6 +62,7 @@ header nav {
   display: inline-block;
   margin-right: 10px;
   overflow: hidden;
+  
 }
 
 .hamburger > label {
@@ -59,6 +71,7 @@ header nav {
   align-items: center;
   width: 30px;
   height: 30px;
+  cursor: pointer
 }
 
 .hamburger-input {
@@ -142,17 +155,6 @@ header nav {
   transition: all 1s linear;
 
 }
-
-/* MAIN */
-
-main {
-  min-height: 100vh;
-}
-
-img {
-  max-width: 100vw;
-}
-
 
 /* Small (smaller than 640px) */
 /* Medium (641px to 1007px) */
