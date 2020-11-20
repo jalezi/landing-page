@@ -108,11 +108,11 @@ header nav {
 .hamburger-input:checked + label + .sidebar {
   z-index: 100;
   top: 10vh;
-  animation: open-sidebar 1s ease-out forwards;
+  height: 90vh
 }
 
 .hamburger-input:checked + label + .sidebar .nav-links {
-  animation: open-margin 1.1s ease-out forwards;
+  margin: 20px 0;
 }
 
 /* SIDEBAR */
@@ -124,77 +124,33 @@ header nav {
   align-items: center;
 
   position: absolute;
-  top: -100vh;
+  top: 10vh;
   left: 0;
   height: 0vh;
   width: 100vw;
   overflow: hidden;
 
   background-color: #a3a3a3;
-  animation: close-sidebar 1s ease-out;
+
+  transition: top 0s linear;
+  transition: height 1s ease-out;
 }
 
 .sidebar .nav-links {
   color: var(--primary-contrast-color);
-  margin: 20px 0;
-  animation: close-margin 0.6s ease-in forwards;
-}
+  margin: 0;
+  transition: all 1s linear;
 
-/* SIDEBAR OPEN - CLOSE ANIMATION */
-
-@keyframes open-sidebar {
-  0% {
-    height: 0vh;
-    border-bottom: 1px solid black;
-  }
-  99% {
-    height: 90vh;
-    border-bottom: 1px solid black;
-  }
-  100% {
-    height: 90vh;
-    border-bottom: none;
-  }
-}
-
-@keyframes close-sidebar {
-  0% {
-    height: 90vh;
-    top: 10vh;
-    border-bottom: 1px solid black;
-  }
-  100% {
-    height: 0vh;
-    top: 10vh;
-    border-bottom: 1px solid black;
-  }
-}
-
-/* SIDEBAR NAV-LINKS OPEN - CLOSE ANIMATION */
-
-@keyframes open-margin {
-  0% {
-    margin: 0;
-  }
-  100% {
-    margin: 20px 0;
-  }
-}
-
-@keyframes close-margin {
-  0% {
-    margin: 20px 0;
-  }
-  100% {
-    margin: 0;
-  }
 }
 
 /* MAIN */
 
 main {
   min-height: 100vh;
-  background-color: red;
+}
+
+img {
+  max-width: 100vw;
 }
 
 
