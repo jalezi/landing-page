@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <!-- HEADER -->
     <header>
       <a>Logo</a>
       <a>Title</a>
@@ -20,7 +21,7 @@
         <a class="nav-links" href="/">Link 2</a>
         <a class="nav-links" href="/">Link 3</a>
       </nav>
-
+      <!-- HAMBURGER -->
       <div class="hamburger">
         <input id="hamburger-input" type="checkbox" class="hamburger-input" />
         <label for="hamburger-input">
@@ -33,12 +34,38 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <!-- MAIN -->
+    <main>
+      <section>
+        <picture>
+          <source
+            media="(min-width:1008px)"
+            srcset="/beer-cheers/beer-cheers-landscape-large.webp"
+          />
+          <source
+            media="(min-width:641px)"
+            srcset="/beer-cheers/beer-cheers-landscape-medium.webp"
+          />
+          <source
+            media="(max-width:640px)"
+            srcset="/beer-cheers/beer-cheers-landscape-small.webp"
+          />
+          <img
+            src="/beer-cheers/beer-cheers-landscape-large.jpg"
+            alt="Flowers"
+            style="width: auto"
+          />
+        </picture>
+      </section>
+      <section></section>
+      <section></section>
+    </main>
   </body>
 </html>
 
 <!-- Photo by ELEVATE from Pexels -->
 <!-- Photo by Juan Pablo Serrano Arenas from Pexels -->
+<!-- PIZZA Photo by Brett Jordan from Pexels -->
 
 <!-- Small (smaller than 640px) -->
 <!-- Medium (641px to 1007px) -->
