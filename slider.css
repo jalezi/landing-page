@@ -9,7 +9,6 @@ main {
 .slider {
   width: 100vw;
   height: 80vh;
-  /* border-radius: 10px; */
   overflow: hidden;
 }
 
@@ -32,8 +31,7 @@ main {
   width: 100%;
 }
 
-/*css for manual slide navigation*/
-
+/* NAVIGATION MANUAL */
 .navigation-manual {
   position: absolute;
   display: flex;
@@ -43,7 +41,7 @@ main {
 }
 
 .manual-btn {
-  border: 2px solid white;
+  border: 2px solid var(--primary-color);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -55,7 +53,7 @@ main {
 }
 
 .manual-btn:hover {
-  background: white;
+  background: var(--primary-color);
 }
 
 #radio1:checked ~ .first {
@@ -74,7 +72,7 @@ main {
   margin-left: -60%;
 }
 
-/*css for automatic navigation*/
+/* NAVIGATION AUTOMATIC*/
 .navigation-auto {
   position: absolute;
   display: flex;
@@ -84,7 +82,7 @@ main {
 }
 
 .navigation-auto div {
-  border: 2px solid white;
+  border: 2px solid var(--primary-color);
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -95,13 +93,20 @@ main {
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-  background: white;
+  background: var(--primary-color);
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-  background: white;
+  background: var(--primary-color);
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-  background: white;
+  background: var(--primary-color);
+}
+
+@media only screen and (min-width: 640px) {
+  .slide img {
+    height: 100%;
+    object-fit: cover;
+  }
 }

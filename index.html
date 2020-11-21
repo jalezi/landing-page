@@ -17,16 +17,17 @@
     />
     <link rel="stylesheet" href="style.css" defer />
     <link rel="stylesheet" href="slider.css" defer />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <a>Logo</a>
-      <a>Title</a>
-      <nav>
-        <a class="nav-links" href="/">Link 1</a>
-        <a class="nav-links" href="/">Link 2</a>
-        <a class="nav-links" href="/">Link 3</a>
+      <a class="nav-link" href="/">Logo</a>
+      <a class="nav-link" href="/">My Bar</a>
+      <nav class="titlebar">
+        <a class="nav-link" href="/">Menu</a>
+        <a class="nav-link" href="/">Events</a>
+        <a class="nav-link" href="/">Contact</a>
       </nav>
       <!-- HAMBURGER -->
       <div class="hamburger">
@@ -34,21 +35,23 @@
         <label for="hamburger-input">
           <div class="hamburger-icon"><div class="hamburger-line"></div></div>
         </label>
+        <!-- SIDEBAR -->
         <nav class="sidebar">
-          <a class="nav-links" href="/">Link 1</a>
-          <a class="nav-links" href="/">Link 2</a>
-          <a class="nav-links" href="/">Link 3</a>
+          <a class="nav-link" href="/">Menu</a>
+          <a class="nav-link" href="/">Events</a>
+          <a class="nav-link" href="/">Contact</a>
         </nav>
       </div>
     </header>
     <!-- MAIN -->
     <main>
       <section class="slider">
+        <!-- SLIDES -->
         <div class="slides">
           <input type="radio" name="radio-btn" id="radio1" checked="checked" />
           <input type="radio" name="radio-btn" id="radio2" />
           <input type="radio" name="radio-btn" id="radio3" />
-
+          <!-- SLIDE ONE -->
           <div class="slide first">
             <picture>
               <source
@@ -75,6 +78,7 @@
               />
             </picture>
           </div>
+          <!-- SLIDE TWO  -->
           <div class="slide">
             <picture>
               <source
@@ -101,6 +105,7 @@
               />
             </picture>
           </div>
+          <!-- SLIDE THREE -->
           <div class="slide">
             <picture>
               <source
@@ -127,12 +132,14 @@
               />
             </picture>
           </div>
+          <!-- NAVIGATION AUTO -->
           <div class="navigation-auto">
             <div class="auto-btn1"></div>
             <div class="auto-btn2"></div>
             <div class="auto-btn3"></div>
           </div>
         </div>
+        <!-- NAVIGATION MANUAL -->
         <div class="navigation-manual">
           <label for="radio1" class="manual-btn"></label>
           <label for="radio2" class="manual-btn"></label>
@@ -140,36 +147,75 @@
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer>
-      <a href="#" aria-label="Go to facebook"
-        ><i class="fab fa-facebook fa-lg" aria-hidden="true"></i
-      ></a>
-      <a href="#" aria-label="Go to instagram"
-        ><i class="fab fa-instagram-square fa-lg" aria-hidden="true"></i
-      ></a>
-      <a href="#" aria-label="Go to google maps"
-        ><i class="fas fa-map-marked-alt fa-lg" aria-hidden="true"></i
-      ></a>
+      <div class="social-links">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <a class="social-link" href="#" aria-label="Go to facebook"
+                ><i class="fab fa-facebook fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div class="flip-card-back">
+              <a class="social-link" href="#" aria-label="Go to facebook"
+                ><i class="fab fa-facebook fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <a class="social-link" href="#" aria-label="Go to instagram"
+                ><i class="fab fa-instagram-square fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div class="flip-card-back">
+              <a class="social-link" href="#" aria-label="Go to instagram"
+                ><i class="fab fa-instagram-square fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <a class="social-link" href="#" aria-label="Go to google maps"
+                ><i class="fab fa-twitter fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div class="flip-card-back">
+              <a class="social-link" href="#" aria-label="Go to google maps"
+                ><i class="fab fa-twitter fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <a class="social-link" href="#" aria-label="Go to google maps"
+                ><i class="fas fa-map-marked-alt fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div class="flip-card-back">
+              <a class="social-link" href="#" aria-label="Go to google maps"
+                ><i class="fas fa-map-marked-alt fa-lg" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script type="text/javascript">
-      var counter = 1;
-      setInterval(function () {
-        console.log(counter);
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if (counter > 3) {
-          counter = 1;
-        }
-      }, 5000);
-    </script>
   </body>
 </html>
 
-<!-- COFFEE BEANS Photo by ELEVATE from Pexels -->
 <!-- BEER CHEERS Photo by Juan Pablo Serrano Arenas from Pexels -->
-<!-- PIZZA Photo by Brett Jordan from Pexels -->
 <!-- BEER CHEERS PORTRAIT Photo by Tembela Bohle from Pexels -->
+<!-- COFFEE BEANS Photo by ELEVATE from Pexels -->
 <!-- COFFEE PORTRAIT Photo by Chevanon Photography from Pexels -->
+<!-- PIZZA Photo by Brett Jordan from Pexels -->
 <!-- PIZZA PORTRAIT Photo by Daria Shevtsova from Pexels -->
 
 <!-- Small (smaller than 640px) -->
