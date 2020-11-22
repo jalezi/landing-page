@@ -150,8 +150,8 @@ header > a:first-child {
   top: 10vh;
   height: 90vh
 }
-
-.hamburger-input:checked + label + .sidebar .nav-link {
+.hamburger-input:checked + label + .sidebar > .toggle-wrap,
+.hamburger-input:checked + label + .sidebar > .nav-link {
   margin: 20px 0;
 }
 
@@ -249,7 +249,7 @@ header > a:first-child {
 
 /* DARK MODE TOGGLE */
 .toggle-wrap {
-  position: relative
+  position: relative;
 }
 .toggle-wrap > input {
   height: 1px;
@@ -259,7 +259,13 @@ header > a:first-child {
 .toggle-wrap > label {
   position: absolute;
   cursor: pointer;
-  left: -7px /* nav-link margin 5px + 2px */
+}
+
+.toggle-wrap:nth-of-type(1) > label{
+  left: -2.5ch;
+}
+.toggle-wrap:nth-of-type(2) > label{
+  left: -1ch;
 }
 
 .toggle-wrap > input:focus,
@@ -270,9 +276,7 @@ header > a:first-child {
 }
 
 /* match .nav-link style */
-.toggle-wrap > input:active ~ label::after,
-.toggle-wrap > input:hover ~ label::after,
-.toggle-wrap > input:focus ~ label::after {
+.toggle-wrap > input:hover ~ label::after {
   width: 100%
 }
 
@@ -284,8 +288,18 @@ header > a:first-child {
     margin-right: 20px;
   }
 
+  .nav-toggleres {
+    display: flex;
+    justify-content: end;
+    margin-left: 20px
+  }
+
+  .nav-toggleres > .toggle-wrap {
+    margin: 0 20px
+  }
+
   header  > a ~ a {
-    margin-right: auto;
+    margin-right: auto; 
   }
 
   .hamburger {

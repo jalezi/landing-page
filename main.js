@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
   });
 
   const modeToggle = document.getElementById('mode-toggle');
-  modeToggle.onclick = event => {
-    let root = document.documentElement;
-    let label = document.querySelector('.toggle-wrap > label');
+  modeToggle.onclick = () => {
+    const root = document.documentElement;
+    const label = document.querySelector('#mode-toggle ~ label');
     if (modeToggle.checked) {
       root.style.setProperty('--primary-color', 'black');
       root.style.setProperty('--primary-contrast-color', 'white');
@@ -29,6 +29,16 @@ document.addEventListener('DOMContentLoaded', function (event) {
       root.style.setProperty('--primary-color', 'white');
       root.style.setProperty('--primary-contrast-color', 'black');
       label.innerText = 'Dark';
+    }
+  };
+
+  const langToggle = document.getElementById('lang-toggle');
+  langToggle.onclick = () => {
+    const label = document.querySelector('#lang-toggle ~ label');
+    if (langToggle.checked) {
+      label.innerText = 'EN';
+    } else {
+      label.innerText = 'SL';
     }
   };
 
