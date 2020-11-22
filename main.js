@@ -10,7 +10,7 @@ function startSlide() {
 }
 
 document.addEventListener('DOMContentLoaded', function (event) {
-  let mode = window.localStorage.getItem('mode') ?? 'light';
+  let theme = window.localStorage.getItem('mode') ?? 'light';
   let lang = window.localStorage.getItem('lang') ?? 'SL';
 
   const radioButtons = document.querySelectorAll('.slides input');
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const modeLabel1 = document.querySelector('#mode-toggle1 ~ label');
   const modeLabel2 = document.querySelector('#mode-toggle2 ~ label');
 
-  modeToggle1.checked = modeToggle2.checked = mode === 'dark' ? true : false;
+  modeToggle1.checked = modeToggle2.checked = theme === 'dark' ? true : false;
 
   root.style.setProperty(
     '--primary-color',
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     : 'Dark';
 
   console.log({
-    mode,
+    mode: theme,
     modeToggle: modeToggle1.checked,
     modeLabel: modeLabel1.innerText,
   });
