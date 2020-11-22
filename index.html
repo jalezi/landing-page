@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <meta
+      name="Description"
+      content="My Bar is perfect spot to relax, meet friends, grab a slice of pizza, have a beer or cup of coffee!"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -24,6 +28,10 @@
     <header>
       <a class="nav-link" href="/">Logo</a>
       <a class="nav-link" href="/">My Bar</a>
+      <div class="toggle-wrap">
+        <input id="mode-toggle" type="checkbox" name="mode-toggle" />
+        <label class="nav-link" for="mode-toggle">Dark</label>
+      </div>
       <nav class="titlebar">
         <a class="nav-link" href="/">Menu</a>
         <a class="nav-link" href="/">Events</a>
@@ -150,7 +158,7 @@
     <!-- FOOTER -->
     <footer>
       <div class="social-links">
-        <div class="flip-card">
+        <div class="flip-card" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <a class="social-link" href="#" aria-label="Go to facebook"
@@ -164,21 +172,21 @@
             </div>
           </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <a class="social-link" href="#" aria-label="Go to instagram"
-                ><i class="fab fa-instagram-square fa-lg" aria-hidden="true"></i
+                ><i class="fab fa-instagram fa-lg" aria-hidden="true"></i
               ></a>
             </div>
             <div class="flip-card-back">
               <a class="social-link" href="#" aria-label="Go to instagram"
-                ><i class="fab fa-instagram-square fa-lg" aria-hidden="true"></i
+                ><i class="fab fa-instagram fa-lg" aria-hidden="true"></i
               ></a>
             </div>
           </div>
         </div>
-        <div class="flip-card">
+        <div class="flip-card" tabindex="0">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <a class="social-link" href="#" aria-label="Go to google maps"

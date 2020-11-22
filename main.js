@@ -17,5 +17,20 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
   });
 
+  const modeToggle = document.getElementById('mode-toggle');
+  modeToggle.onclick = event => {
+    let root = document.documentElement;
+    let label = document.querySelector('.toggle-wrap > label');
+    if (modeToggle.checked) {
+      root.style.setProperty('--primary-color', 'black');
+      root.style.setProperty('--primary-contrast-color', 'white');
+      label.innerText = 'Light';
+    } else {
+      root.style.setProperty('--primary-color', 'white');
+      root.style.setProperty('--primary-contrast-color', 'black');
+      label.innerText = 'Dark';
+    }
+  };
+
   startSlide();
 });
