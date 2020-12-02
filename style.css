@@ -6,7 +6,55 @@
   box-sizing: border-box;
 }
 
-iframe {
+body {
+  font-size: 0.8rem;
+  font-family: 'Roboto Mono', monospace;
+  background: lightblue;
+}
+
+.home h1,
+.home h2 {
+  padding: 8px 16px;
+}
+
+.home h1 {
+  text-align: center;
+}
+
+.home a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home header {
+  padding: 8px 16px;
+  background: lightgray;
+}
+
+#bar {
+  margin-top: -2px;
+}
+
+.home nav {
+  margin: 8px 0;
+}
+
+.home nav a {
+  margin: 0 8px;
+  padding: 4px 8px;
+  border: 2px solid black;
+}
+
+.home section {
+  max-height: 100%;
+  max-width: 100vw;
+}
+
+.home iframe {
+  /* margin: 16px 0; */
   height: 100vh;
   width: 100vw;
+  border: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }

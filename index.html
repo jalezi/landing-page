@@ -7,26 +7,42 @@
     <meta name="Description" content="Multiple different landing pages" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" defer />
   </head>
-  <body>
-    <h1>Landing Pages</h1>
-    <iframe
-      src="coffee-shop/index.html"
-      frameborder="0"
-      title="Coffee Shop Landing Page"
-      height="568"
-      width="320"
-    ></iframe>
-    <iframe
-      src="bar/index.html"
-      frameborder="0"
-      title="Bar Landing Page"
-      height="568"
-      width="320"
-    ></iframe>
+  <body class="home">
+    <header>
+      <nav>
+        <a href="#iframe-coffee-shop"> Coffee Shop </a>
+        <a href="#iframe-bar"> Bar </a>
+      </nav>
+    </header>
+    <h1>Landing Pages Examples</h1>
+    <section id="coffee-shop">
+      <header>
+        <a href="#iframe-coffee-shop">
+          <h2>Coffee Shop</h2>
+        </a>
+      </header>
+      <iframe
+        id="iframe-coffee-shop"
+        src="coffee-shop/index.html"
+        title="Coffee Shop Landing Page"
+      ></iframe>
+    </section>
+    <section id="bar">
+      <header>
+        <a href="#iframe-bar">
+          <h2>Bar</h2>
+        </a>
+      </header>
+      <iframe
+        id="iframe-bar"
+        src="bar/index.html"
+        title="Bar Landing Page"
+      ></iframe>
+    </section>
   </body>
 </html>
