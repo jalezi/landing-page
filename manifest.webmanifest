@@ -1,0 +1,9 @@
+{
+  "short_name": "Landpages",
+  "name": "Landpages examples by Jaka Daneu",
+  "description": "Weather forecast information",
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "browser",
+  "scope": "/"
+}
