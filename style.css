@@ -38,19 +38,8 @@ body {
   padding: 8px 16px;
 }
 
-#coffee-shop > header {
+.home section > header {
   color: white;
-  background: rgba(9, 9, 121, 0.8);
-  background: linear-gradient(
-    90deg,
-    rgba(9, 9, 121, 0.6) 1%,
-    rgba(0, 212, 255, 0.6) 72%,
-    rgba(9, 9, 121, 0.6) 98%
-  );
-}
-
-#bar > header {
-  color: black;
   background: rgba(9, 9, 121, 0.8);
   background: linear-gradient(
     90deg,
@@ -82,7 +71,7 @@ body {
   border: 2px solid white;
 }
 #bar header a h2 {
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 .home iframe {
